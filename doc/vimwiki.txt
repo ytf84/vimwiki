@@ -2511,6 +2511,32 @@ Default: 1
 
 
 ------------------------------------------------------------------------------
+=======
+*g:vimwiki_create_link*
+
+Create target wiki page if it does not exist. See |:VimwikiFollowLink|.
+
+Value           Description~
+0               Do not create target wiki page.
+1               Create target wiki page.
+
+Default: 1
+
+
+------------------------------------------------------------------------------
+*g:vimwiki_markdown_link_ext*
+
+Append wiki file extension to links in Markdown. This is needed for
+compatibility with other Markdown tools.
+
+Value           Description~
+0               Do not append wiki file extension.
+1               Append wiki file extension.
+
+Default: 0
+
+
+------------------------------------------------------------------------------
 *VimwikiLinkHandler*
 
 A customizable link handler can be defined to override Vimwiki's behavior when
