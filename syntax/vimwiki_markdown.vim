@@ -98,7 +98,7 @@ let s:markdown_syntax.bold_search = '\%(^\|\s\|[[:punct:]]\)\@<=\*\zs'.
       \ '\%([^*`[:space:]][^*`]*[^*`[:space:]]\|[^*`[:space:]]\)\ze\*\%([[:punct:]]\|\s\|$\)\@='
 let s:markdown_syntax.bold_match = '\%(^\|\s\|[[:punct:]]\)\@<=\*__Text__\*'.
       \ '\%([[:punct:]]\|\s\|$\)\@='
-let s:markdown_syntax.wikilink = '\[\[\zs[^\\\]|]\+\ze\%(|[^\\\]]\+\)\?\]\]'
+let s:markdown_syntax.wikilink = '\[.*\](\zs[^\\\]|]\+\ze\%(|[^\\\]]\+\)\?.md)\|\[.*\](\zs[^\\\]|]\+\ze\%(|[^\\\]]\+\)\?)'
 let s:markdown_syntax.tag_search = '\(^\|\s\)\zs:\([^:''[:space:]]\+:\)\+\ze\(\s\|$\)'
 let s:markdown_syntax.tag_match = '\(^\|\s\):\([^:''[:space:]]\+:\)*__Tag__:'.
       \ '\([^:[:space:]]\+:\)*\(\s\|$\)'
