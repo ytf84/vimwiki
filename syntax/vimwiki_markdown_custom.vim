@@ -130,6 +130,10 @@ for s:i in range(1,6)
               \ 'VimwikiLink,VimwikiWeblink1,VimwikiWikiLink1,@Spell'
 endfor
 
+" Header level 1
+execute 'syntax match VimwikiHeader1 /^.\+\n=\+$/ contains=VimwikiTodo,VimwikiHeaderChar,VimwikiNoExistsLink,VimwikiCode,VimwikiLink,VimwikiWeblink1,VimwikiWikiLink1,@Spell'
+" Header level 2
+execute 'syntax match VimwikiHeader1 /^.\+\n-\+$/ contains=VimwikiTodo,VimwikiHeaderChar,VimwikiNoExistsLink,VimwikiCode,VimwikiLink,VimwikiWeblink1,VimwikiWikiLink1,@Spell'
 
 
 " concealed chars
